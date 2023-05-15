@@ -1,0 +1,58 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Menu css Start
+=========================================================*/
+#nav{
+    padding: 15px 0;
+    // background: rgba(255, 228, 228, 0.3);
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .nav_left{
+        .nav_offcanvas_btn{
+            background: none;
+            border: 1px solid $b;
+            &:focus{
+                box-shadow: none !important;
+            }
+            i{
+                color: $b;
+                font-size: 17px;
+            }
+        }
+        .main_logo{
+            margin-left: 30px;
+            @include fs($b,25px,500);
+        }
+    }
+    .nav_right{
+        text-align: right;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            li{
+                margin: 0 5px;
+                button{
+                    background: none;
+                    border: none;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    i{
+                        color: $b;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    Menu css end
+=========================================================*/
