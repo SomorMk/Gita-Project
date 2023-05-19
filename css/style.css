@@ -196,15 +196,17 @@ body {
   font-weight: 500;
 }
 #nav .nav_left .nav_offcanvas_inner {
-  background: #fff;
-  padding: 50px 50px;
-  height: 60%;
+  background: transparent;
 }
 #nav .nav_left .nav_offcanvas_inner .btn-close {
   position: absolute;
   top: 30px;
   right: 30px;
   z-index: 9;
+}
+#nav .nav_left .nav_offcanvas_inner .nav_offcanvas_inner_row {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px 50px;
 }
 #nav .nav_left .nav_offcanvas_inner .nav_offcanvas_inner_row .nav_offcanvas_inner_head {
   text-align: center;

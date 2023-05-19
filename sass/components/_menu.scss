@@ -31,9 +31,7 @@
         }
 
         .nav_offcanvas_inner{
-            background: $w;
-            padding: 50px 50px;
-            height: 60%;
+            background: transparent;
             .btn-close{
                 position: absolute;
                 top: 30px;
@@ -41,6 +39,8 @@
                 z-index: 9;
             }
             .nav_offcanvas_inner_row{
+                background: rgba(255, 255, 255, 0.8);
+                padding: 50px 50px;
                 .nav_offcanvas_inner_head{
                     text-align: center;
                     margin-bottom: 30px;
